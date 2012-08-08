@@ -1,0 +1,282 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		848376E915D2FBFA00EC322F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848376E815D2FBFA00EC322F /* UIKit.framework */; };
+		848376EB15D2FBFA00EC322F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848376EA15D2FBFA00EC322F /* Foundation.framework */; };
+		848376ED15D2FBFA00EC322F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848376EC15D2FBFA00EC322F /* CoreGraphics.framework */; };
+		848376EF15D2FBFA00EC322F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848376EE15D2FBFA00EC322F /* CoreData.framework */; };
+		848376F515D2FBFA00EC322F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 848376F315D2FBFA00EC322F /* InfoPlist.strings */; };
+		848376F715D2FBFA00EC322F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 848376F615D2FBFA00EC322F /* main.m */; };
+		848376FB15D2FBFA00EC322F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 848376FA15D2FBFA00EC322F /* AppDelegate.m */; };
+		848376FE15D2FBFA00EC322F /* Flowers.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 848376FC15D2FBFA00EC322F /* Flowers.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		848376E415D2FBFA00EC322F /* Flowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		848376E815D2FBFA00EC322F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		848376EA15D2FBFA00EC322F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		848376EC15D2FBFA00EC322F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		848376EE15D2FBFA00EC322F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		848376F215D2FBFA00EC322F /* Flowers-Info.plist */ = {isa = PBXFileReference; path = "Flowers-Info.plist"; sourceTree = "<group>"; };
+		848376F415D2FBFA00EC322F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		848376F615D2FBFA00EC322F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		848376F815D2FBFA00EC322F /* Flowers-Prefix.pch */ = {isa = PBXFileReference; path = "Flowers-Prefix.pch"; sourceTree = "<group>"; };
+		848376F915D2FBFA00EC322F /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		848376FA15D2FBFA00EC322F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		848376FD15D2FBFA00EC322F /* Flowers.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Flowers.xcdatamodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		848376E115D2FBFA00EC322F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848376E915D2FBFA00EC322F /* UIKit.framework in Frameworks */,
+				848376EB15D2FBFA00EC322F /* Foundation.framework in Frameworks */,
+				848376ED15D2FBFA00EC322F /* CoreGraphics.framework in Frameworks */,
+				848376EF15D2FBFA00EC322F /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		848376D915D2FBFA00EC322F = {
+			isa = PBXGroup;
+			children = (
+				848376F015D2FBFA00EC322F /* Flowers */,
+				848376E715D2FBFA00EC322F /* Frameworks */,
+				848376E515D2FBFA00EC322F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		848376E515D2FBFA00EC322F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				848376E415D2FBFA00EC322F /* Flowers.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		848376E715D2FBFA00EC322F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				848376E815D2FBFA00EC322F /* UIKit.framework */,
+				848376EA15D2FBFA00EC322F /* Foundation.framework */,
+				848376EC15D2FBFA00EC322F /* CoreGraphics.framework */,
+				848376EE15D2FBFA00EC322F /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		848376F015D2FBFA00EC322F /* Flowers */ = {
+			isa = PBXGroup;
+			children = (
+				848376F915D2FBFA00EC322F /* AppDelegate.h */,
+				848376FA15D2FBFA00EC322F /* AppDelegate.m */,
+				848376FC15D2FBFA00EC322F /* Flowers.xcdatamodeld */,
+				848376F115D2FBFA00EC322F /* Supporting Files */,
+			);
+			path = Flowers;
+			sourceTree = "<group>";
+		};
+		848376F115D2FBFA00EC322F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				848376F215D2FBFA00EC322F /* Flowers-Info.plist */,
+				848376F315D2FBFA00EC322F /* InfoPlist.strings */,
+				848376F615D2FBFA00EC322F /* main.m */,
+				848376F815D2FBFA00EC322F /* Flowers-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		848376E315D2FBFA00EC322F /* Flowers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8483770115D2FBFA00EC322F /* Build configuration list for PBXNativeTarget "Flowers" */;
+			buildPhases = (
+				848376E015D2FBFA00EC322F /* Sources */,
+				848376E115D2FBFA00EC322F /* Frameworks */,
+				848376E215D2FBFA00EC322F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Flowers;
+			productName = Flowers;
+			productReference = 848376E415D2FBFA00EC322F /* Flowers.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		848376DB15D2FBFA00EC322F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 848376DE15D2FBFA00EC322F /* Build configuration list for PBXProject "Flowers" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 848376D915D2FBFA00EC322F;
+			productRefGroup = 848376E515D2FBFA00EC322F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				848376E315D2FBFA00EC322F /* Flowers */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		848376E215D2FBFA00EC322F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848376F515D2FBFA00EC322F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		848376E015D2FBFA00EC322F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848376F715D2FBFA00EC322F /* main.m in Sources */,
+				848376FB15D2FBFA00EC322F /* AppDelegate.m in Sources */,
+				848376FE15D2FBFA00EC322F /* Flowers.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		848376F315D2FBFA00EC322F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				848376F415D2FBFA00EC322F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		848376FF15D2FBFA00EC322F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8483770015D2FBFA00EC322F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8483770215D2FBFA00EC322F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Flowers/Flowers-Prefix.pch";
+				INFOPLIST_FILE = "Flowers/Flowers-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8483770315D2FBFA00EC322F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Flowers/Flowers-Prefix.pch";
+				INFOPLIST_FILE = "Flowers/Flowers-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		848376DE15D2FBFA00EC322F /* Build configuration list for PBXProject "Flowers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				848376FF15D2FBFA00EC322F /* Debug */,
+				8483770015D2FBFA00EC322F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8483770115D2FBFA00EC322F /* Build configuration list for PBXNativeTarget "Flowers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8483770215D2FBFA00EC322F /* Debug */,
+				8483770315D2FBFA00EC322F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		848376FC15D2FBFA00EC322F /* Flowers.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				848376FD15D2FBFA00EC322F /* Flowers.xcdatamodel */,
+			);
+			currentVersion = 848376FD15D2FBFA00EC322F /* Flowers.xcdatamodel */;
+			path = Flowers.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 848376DB15D2FBFA00EC322F /* Project object */;
+}
