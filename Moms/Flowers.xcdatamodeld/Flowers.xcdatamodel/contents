@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1487" systemVersion="11E53" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="City" representedClassName="City" syncable="YES">
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="serverId" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="groups" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Group" inverseName="city" inverseEntity="Group" syncable="YES"/>
+        <relationship name="items" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Item" inverseName="city" inverseEntity="Item" syncable="YES"/>
+    </entity>
+    <entity name="Group" representedClassName="Group" syncable="YES">
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="serverId" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="city" toMany="YES" minCount="1" deletionRule="Nullify" destinationEntity="City" inverseName="groups" inverseEntity="City" syncable="YES"/>
+        <relationship name="items" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Item" inverseName="group" inverseEntity="Item" syncable="YES"/>
+    </entity>
+    <entity name="Item" representedClassName="Item" syncable="YES">
+        <attribute name="images" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="inBasket" attributeType="Boolean" syncable="YES"/>
+        <attribute name="inFavorites" attributeType="Boolean" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="price" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="rating" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="serverId" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="city" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="City" inverseName="items" inverseEntity="City" syncable="YES"/>
+        <relationship name="group" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Group" inverseName="items" inverseEntity="Group" syncable="YES"/>
+        <relationship name="orderedItem" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="OrderedItem" inverseName="item" inverseEntity="OrderedItem" syncable="YES"/>
+    </entity>
+    <entity name="Order" representedClassName="Order" syncable="YES">
+        <attribute name="buyerName" attributeType="String" syncable="YES"/>
+        <attribute name="buyerPhone" attributeType="Decimal" syncable="YES"/>
+        <attribute name="deliveringTimeFrom" attributeType="Date" syncable="YES"/>
+        <attribute name="deliveringTimeTo" attributeType="Date" syncable="YES"/>
+        <attribute name="destination" attributeType="String" syncable="YES"/>
+        <relationship name="orderedItems" toMany="YES" minCount="1" deletionRule="Nullify" destinationEntity="OrderedItem" inverseName="order" inverseEntity="OrderedItem" syncable="YES"/>
+    </entity>
+    <entity name="OrderedItem" representedClassName="OrderedItem" syncable="YES">
+        <attribute name="count" attributeType="Integer 32" defaultValueString="1" syncable="YES"/>
+        <relationship name="item" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Item" inverseName="orderedItem" inverseEntity="Item" syncable="YES"/>
+        <relationship name="order" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Order" inverseName="orderedItems" inverseEntity="Order" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="City" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Group" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Item" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Order" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="OrderedItem" positionX="0" positionY="0" width="0" height="0"/>
+    </elements>
+</model>
