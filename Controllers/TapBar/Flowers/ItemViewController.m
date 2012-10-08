@@ -70,8 +70,8 @@
 	CGRect tmpFrame = CGRectMake(x, y, width, pickerHeight);
     
     self.horizontalPickerView = [[V8HorizontalPickerView alloc] initWithFrame:tmpFrame];
-	self.horizontalPickerView.backgroundColor   = [UIColor darkGrayColor];
-	self.horizontalPickerView.selectedTextColor = [UIColor whiteColor];
+	self.horizontalPickerView.backgroundColor   = [UIColor clearColor];
+	self.horizontalPickerView.selectedTextColor = [UIColor blackColor];
 	self.horizontalPickerView.textColor   = [UIColor grayColor];
 	self.horizontalPickerView.delegate    = self;
 	self.horizontalPickerView.dataSource  = self;

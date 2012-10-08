@@ -10,9 +10,9 @@
 #import "OrderedItem.h"
 #import "Order.h"
 #import "Item.h"
-#import "ItemCell.h"
 #import "ItemViewController.h"
-#import "CRTableViewCell.h"
+#import "BasketCell.h"
+#import "OrderViewController.h"
 
 @interface BasketViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -20,6 +20,8 @@
 
 @property (nonatomic, retain) IBOutlet UITableView *tableView;
 @property (nonatomic, retain) NSMutableArray *itemsInBasket;
+
+- (IBAction)orderButtonTouched:(id)sender;
 
 @end
 
@@ -46,6 +48,15 @@
     [self.tableView reloadData];
 }
 
+#pragma mark - UIButton action
+
+- (IBAction)orderButtonTouched:(id)sender
+{
+    OrderViewController *orderVC = [[OrderViewController alloc] initWithNibName:@"OrderViewController" bundle:nil];
+    [self.navigationController pushViewController:orderVC animated:YES];
+    [orderVC release];
+}
+
 #pragma mark - UITableView delegate
 
 
@@ -60,16 +71,17 @@
     static NSString *CRTableViewCellIdentifier = @"cellIdentifier";
     
     // init the CRTableViewCell
-    CRTableViewCell *cell = (CRTableViewCell *)[tableView dequeueReusableCellWithIdentifier:CRTableViewCellIdentifier];
+    BasketCell *cell = (BasketCell *)[tableView dequeueReusableCellWithIdentifier:CRTableViewCellIdentifier];
     
     if (cell == nil) {
-        cell = [[CRTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CRTableViewCellIdentifier];
+        cell = [[BasketCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CRTableViewCellIdentifier];
     }
     
     // Check if the cell is currently selected (marked)
     Item *item = [self.itemsInBasket objectAtIndex:indexPath.row];
     cell.isSelected = [selectedMarks containsObject:item] ? YES : NO;
     cell.textLabel.text = item.name;
+    cell.detailTextLabel.text = @"1";
     
     return cell;
 }
