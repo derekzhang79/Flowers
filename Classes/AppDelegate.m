@@ -37,22 +37,18 @@
     
     RootViewController *rootVC = [[[RootViewController alloc] initWithStyle:UITableViewStyleGrouped] autorelease];
     UINavigationController *rootNavController = [[[UINavigationController alloc] initWithRootViewController:rootVC] autorelease];
-    rootNavController.navigationBar.barStyle = UIBarStyleBlack;
     
     WishListViewController *wishListVC = [[[WishListViewController alloc] initWithNibName:@"WishListViewController" bundle:nil] autorelease];
     UINavigationController *wishListNavController = [[[UINavigationController alloc] initWithRootViewController:wishListVC] autorelease];
     wishListVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Избранное" image:[UIImage imageNamed:@"tabbar_wishlist.png"] tag:2];
-    wishListNavController.navigationBar.barStyle = UIBarStyleBlack;
     
     BasketViewController *basketVC = [[[BasketViewController alloc] initWithNibName:@"BasketViewController" bundle:nil] autorelease];
     UINavigationController *basketNavController = [[[UINavigationController alloc] initWithRootViewController:basketVC] autorelease];
     basketVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Корзина" image:[UIImage imageNamed:@"tabbar_basket.png"] tag:3];
-    basketNavController.navigationBar.barStyle = UIBarStyleBlack;
     
     SettingsViewController *settingsVC = [[SettingsViewController alloc] initWithStyle:UITableViewStyleGrouped];
     UINavigationController *settingsNavController = [[UINavigationController alloc] initWithRootViewController:settingsVC];
     settingsVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Настройки" image:[UIImage imageNamed:@"tabbar_settings.png"] tag:4];
-    settingsNavController.navigationBar.barStyle = UIBarStyleBlack;
     
     self.tabBarController = [[[UITabBarController alloc] init] autorelease];
     self.tabBarController.viewControllers = [NSArray arrayWithObjects:rootNavController, wishListNavController, basketNavController, settingsNavController, nil];
