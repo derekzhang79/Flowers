@@ -8,13 +8,21 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PaymentSelectingViewController : UITableViewController
-{
-    NSArray *arrayWithPaymentMethods;
-    NSString *paymentMethod;
-}
+typedef enum {
+    PaymentMethodWebMoney,
+    PaymentMethodYandex_money,
+    PaymentMethodVISA,
+    PaymentMethodMaster_card
+} PaymentMethod;
 
-@property (nonatomic, retain) NSArray *arrayWithPaymentMethods;
-@property (nonatomic, retain) NSString *paymentMethod;
+@protocol PaymentSelectingDelegate <NSObject>
+@required
+- (void)setNewPymentMethod:(PaymentMethod)paymentMethod;
+@end
+
+@interface PaymentSelectingViewController : UITableViewController
+
+@property (nonatomic) PaymentMethod paymentMethod;
+@property (nonatomic, assign) id<PaymentSelectingDelegate> delegate;
 
 @end

@@ -5,6 +5,7 @@
 
 const struct OrderedItemAttributes OrderedItemAttributes = {
 	.count = @"count",
+	.serverId = @"serverId",
 };
 
 const struct OrderedItemRelationships OrderedItemRelationships = {
@@ -45,6 +46,10 @@ const struct OrderedItemFetchedProperties OrderedItemFetchedProperties = {
 		NSSet *affectingKey = [NSSet setWithObject:@"count"];
 		keyPaths = [keyPaths setByAddingObjectsFromSet:affectingKey];
 	}
+	if ([key isEqualToString:@"serverIdValue"]) {
+		NSSet *affectingKey = [NSSet setWithObject:@"serverId"];
+		keyPaths = [keyPaths setByAddingObjectsFromSet:affectingKey];
+	}
 
 	return keyPaths;
 }
@@ -72,6 +77,32 @@ const struct OrderedItemFetchedProperties OrderedItemFetchedProperties = {
 
 - (void)setPrimitiveCountValue:(int32_t)value_ {
 	[self setPrimitiveCount:[NSNumber numberWithInt:value_]];
+}
+
+
+
+
+
+@dynamic serverId;
+
+
+
+- (int32_t)serverIdValue {
+	NSNumber *result = [self serverId];
+	return [result intValue];
+}
+
+- (void)setServerIdValue:(int32_t)value_ {
+	[self setServerId:[NSNumber numberWithInt:value_]];
+}
+
+- (int32_t)primitiveServerIdValue {
+	NSNumber *result = [self primitiveServerId];
+	return [result intValue];
+}
+
+- (void)setPrimitiveServerIdValue:(int32_t)value_ {
+	[self setPrimitiveServerId:[NSNumber numberWithInt:value_]];
 }
 
 

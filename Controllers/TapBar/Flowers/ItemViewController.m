@@ -8,6 +8,7 @@
 
 #import "ItemViewController.h"
 #import "Item.h"
+#import "OrderedItem.h"
 #import "DLStarRatingControl.h"
 #import "PagedFlowView.h"
 #import <QuartzCore/QuartzCore.h>
@@ -20,8 +21,8 @@
 @property (nonatomic, retain) IBOutlet PagedFlowView *hFlowView;
 @property (nonatomic, retain) IBOutlet DLStarRatingControl *starRatingControl;
 @property (nonatomic, retain) IBOutlet UIPageControl *hPageControl;
-@property (nonatomic, retain) NSArray *imageArray;
 @property (nonatomic, retain) IBOutlet V8HorizontalPickerView *horizontalPickerView;
+@property (nonatomic, retain) NSArray *imageArray;
 
 - (IBAction)pageControlValueDidChange:(id)sender;
 
@@ -59,61 +60,33 @@
     self.scrollView.contentSize = CGSizeMake(320.0f, 500.0f);
     self.priceLabel.text = [NSString stringWithFormat:@"%@ р.", self.item.price.stringValue];
     
-
     // number picker
-    
-    CGFloat margin = 5.0f;
-	CGFloat width = 205.0f;
-	CGFloat pickerHeight = 40.0f;
-	CGFloat x = margin;
-	CGFloat y = 300.0f;
-	CGRect tmpFrame = CGRectMake(x, y, width, pickerHeight);
-    
-    self.horizontalPickerView = [[V8HorizontalPickerView alloc] initWithFrame:tmpFrame];
-	self.horizontalPickerView.backgroundColor   = [UIColor clearColor];
-	self.horizontalPickerView.selectedTextColor = [UIColor blackColor];
-	self.horizontalPickerView.textColor   = [UIColor grayColor];
+
 	self.horizontalPickerView.delegate    = self;
 	self.horizontalPickerView.dataSource  = self;
 	self.horizontalPickerView.elementFont = [UIFont boldSystemFontOfSize:14.0f];
-	self.horizontalPickerView.selectionPoint = CGPointMake(60, 0);
-    
+	self.horizontalPickerView.selectionPoint = CGPointMake(20, 0);
+    [self.horizontalPickerView scrollToElement:0 animated:NO];
 	// add carat or other view to indicate selected element
 	UIImageView *indicator = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"indicator"]];
 	self.horizontalPickerView.selectionIndicatorView = indicator;
 	[indicator release];
     
-	// add gradient images to left and right of view if desired
-	UIImageView *leftFade = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"left_fade"]];
-	self.horizontalPickerView.leftEdgeView = leftFade;
-	[leftFade release];
-    
-	UIImageView *rightFade = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"right_fade"]];
-	self.horizontalPickerView.rightEdgeView = rightFade;
-	[rightFade release];
-    
-	// add image to left of scroll area
-	UIImageView *leftImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"loopback"]];
-	self.horizontalPickerView.leftScrollEdgeView = leftImage;
-	[leftImage release];
-	self.horizontalPickerView.scrollEdgeViewPadding = 20.0f;
-    
-	UIImageView *rightImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"airplane"]];
-	self.horizontalPickerView.rightScrollEdgeView = rightImage;
-	[rightImage release];
-    
 	[self.scrollView addSubview:self.horizontalPickerView];
-    [self.horizontalPickerView scrollToElement:1 animated:YES];
     
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-	[super viewWillAppear:animated];
-	[self.horizontalPickerView scrollToElement:0 animated:NO];
-}
+#pragma mark - UIButton actions
 
 - (IBAction)addItemToBasket:(id)sender {
-    self.item.inBasketValue = !self.item.inBasketValue;
+    OrderedItem *orderedItem = [OrderedItem findOneWithItemUID:self.item.serverId.stringValue];
+    if (!orderedItem) {
+        orderedItem = [OrderedItem createOne];
+        orderedItem.item = self.item;
+        orderedItem.serverId = self.item.serverId;
+    }
+    orderedItem.countValue = self.horizontalPickerView.currentSelectedIndex + 1;
+    
     [[CoreDataStack sharedInstance] saveContextForCurrentThread];
 }
 
@@ -162,19 +135,22 @@
 
 - (NSInteger)numberOfElementsInHorizontalPickerView:(V8HorizontalPickerView *)picker
 {
-    return 10;
+    return 15;
 }
 
 - (void)horizontalPickerView:(V8HorizontalPickerView *)picker didSelectElementAtIndex:(NSInteger)index {
-    self.priceLabel.text = [NSString stringWithFormat:@"%d р.", (int)(index * self.item.priceValue)];
+    self.priceLabel.text = [NSString stringWithFormat:@"%d р.", (int)((index + 1) * self.item.priceValue)];
 }
 
 - (NSString *)horizontalPickerView:(V8HorizontalPickerView *)picker titleForElementAtIndex:(NSInteger)index {
-    return [NSString stringWithFormat:@"%i", index];
+    return [NSString stringWithFormat:@"%i", index + 1];
 }
 
 - (NSInteger) horizontalPickerView:(V8HorizontalPickerView *)picker widthForElementAtIndex:(NSInteger)index {
-    return 15;
+    if (index < 9)
+        return 15;
+    else
+        return 20;
 }
 
 

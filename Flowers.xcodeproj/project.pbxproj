@@ -8,6 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		2035EC3016120B3300A5945E /* CRTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2035EC2F16120B3300A5945E /* CRTableViewCell.m */; };
+		2035F8C2162448900006C59B /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2035F8C1162448900006C59B /* MessageUI.framework */; };
+		2035F8CB162454890006C59B /* libPayPalEC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2035F8C9162454890006C59B /* libPayPalEC.a */; };
+		2035F8D316247A340006C59B /* ReviewOrderController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2035F8D116247A330006C59B /* ReviewOrderController.m */; };
+		2035F8D416247A340006C59B /* ReviewOrderController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2035F8D216247A340006C59B /* ReviewOrderController.xib */; };
+		2035F90616247C700006C59B /* ECNetworkHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2035F8D716247C700006C59B /* ECNetworkHandler.m */; };
+		2035F90716247C700006C59B /* Address.m in Sources */ = {isa = PBXBuildFile; fileRef = 2035F8DA16247C700006C59B /* Address.m */; };
+		2035F90816247C700006C59B /* BillingAgreementDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 2035F8DC16247C700006C59B /* BillingAgreementDetails.m */; };
+		2035F90916247C700006C59B /* BuyerDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 2035F8DE16247C700006C59B /* BuyerDetails.m */; };
+		2035F90A16247C700006C59B /* DoExpressCheckoutPaymentRequestDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 2035F8E016247C700006C59B /* DoExpressCheckoutPaymentRequestDetails.m */; };
+		2035F90B16247C700006C59B /* DoExpressCheckoutPaymentResponseDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 2035F8E216247C700006C59B /* DoExpressCheckoutPaymentResponseDetails.m */; };
+		2035F90C16247C700006C59B /* EbayItemPaymentDetailsItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2035F8E416247C700006C59B /* EbayItemPaymentDetailsItem.m */; };
+		2035F90D16247C700006C59B /* EnhancedCheckoutData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2035F8E716247C700006C59B /* EnhancedCheckoutData.m */; };
+		2035F90E16247C700006C59B /* EnhancedItemData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2035F8E916247C700006C59B /* EnhancedItemData.m */; };
+		2035F90F16247C700006C59B /* EnhancedPaymentInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2035F8EB16247C700006C59B /* EnhancedPaymentInfo.m */; };
+		2035F91016247C700006C59B /* FMFDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 2035F8ED16247C700006C59B /* FMFDetails.m */; };
+		2035F91116247C700006C59B /* FundingSourceDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 2035F8EF16247C700006C59B /* FundingSourceDetails.m */; };
+		2035F91216247C700006C59B /* GetExpressCheckoutDetailsResponseDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 2035F8F116247C700006C59B /* GetExpressCheckoutDetailsResponseDetails.m */; };
+		2035F91316247C700006C59B /* OtherPaymentMethodDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 2035F8F316247C700006C59B /* OtherPaymentMethodDetails.m */; };
+		2035F91416247C700006C59B /* PayerInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2035F8F516247C700006C59B /* PayerInfo.m */; };
+		2035F91516247C700006C59B /* PaymentDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 2035F8F716247C700006C59B /* PaymentDetails.m */; };
+		2035F91616247C700006C59B /* PaymentDetailsItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2035F8F916247C700006C59B /* PaymentDetailsItem.m */; };
+		2035F91716247C700006C59B /* PaymentError.m in Sources */ = {isa = PBXBuildFile; fileRef = 2035F8FB16247C700006C59B /* PaymentError.m */; };
+		2035F91816247C700006C59B /* PaymentInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2035F8FD16247C700006C59B /* PaymentInfo.m */; };
+		2035F91916247C700006C59B /* PersonName.m in Sources */ = {isa = PBXBuildFile; fileRef = 2035F8FF16247C700006C59B /* PersonName.m */; };
+		2035F91A16247C700006C59B /* SellerDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 2035F90116247C700006C59B /* SellerDetails.m */; };
+		2035F91B16247C700006C59B /* SetExpressCheckoutRequestDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 2035F90316247C700006C59B /* SetExpressCheckoutRequestDetails.m */; };
+		2035F91C16247C700006C59B /* ShippingOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2035F90516247C700006C59B /* ShippingOptions.m */; };
 		204B4FAC160314A300DF6D8D /* mogen.sh in Resources */ = {isa = PBXBuildFile; fileRef = 204B4FAA160314A300DF6D8D /* mogen.sh */; };
 		204B4FAD160314A300DF6D8D /* mogend.sh in Resources */ = {isa = PBXBuildFile; fileRef = 204B4FAB160314A300DF6D8D /* mogend.sh */; };
 		204B4FC71603165100DF6D8D /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 204B4FB31603165100DF6D8D /* City.m */; };
@@ -144,6 +171,59 @@
 /* Begin PBXFileReference section */
 		2035EC2E16120B3300A5945E /* CRTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRTableViewCell.h; sourceTree = "<group>"; };
 		2035EC2F16120B3300A5945E /* CRTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRTableViewCell.m; sourceTree = "<group>"; };
+		2035F8C1162448900006C59B /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		2035F8C9162454890006C59B /* libPayPalEC.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPayPalEC.a; sourceTree = "<group>"; };
+		2035F8CA162454890006C59B /* PayPal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPal.h; sourceTree = "<group>"; };
+		2035F8D016247A330006C59B /* ReviewOrderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReviewOrderController.h; path = Order/ReviewOrderController.h; sourceTree = "<group>"; };
+		2035F8D116247A330006C59B /* ReviewOrderController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReviewOrderController.m; path = Order/ReviewOrderController.m; sourceTree = "<group>"; };
+		2035F8D216247A340006C59B /* ReviewOrderController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ReviewOrderController.xib; path = Order/ReviewOrderController.xib; sourceTree = "<group>"; };
+		2035F8D616247C700006C59B /* ECNetworkHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECNetworkHandler.h; sourceTree = "<group>"; };
+		2035F8D716247C700006C59B /* ECNetworkHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECNetworkHandler.m; sourceTree = "<group>"; };
+		2035F8D916247C700006C59B /* Address.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Address.h; sourceTree = "<group>"; };
+		2035F8DA16247C700006C59B /* Address.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Address.m; sourceTree = "<group>"; };
+		2035F8DB16247C700006C59B /* BillingAgreementDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BillingAgreementDetails.h; sourceTree = "<group>"; };
+		2035F8DC16247C700006C59B /* BillingAgreementDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BillingAgreementDetails.m; sourceTree = "<group>"; };
+		2035F8DD16247C700006C59B /* BuyerDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyerDetails.h; sourceTree = "<group>"; };
+		2035F8DE16247C700006C59B /* BuyerDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuyerDetails.m; sourceTree = "<group>"; };
+		2035F8DF16247C700006C59B /* DoExpressCheckoutPaymentRequestDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoExpressCheckoutPaymentRequestDetails.h; sourceTree = "<group>"; };
+		2035F8E016247C700006C59B /* DoExpressCheckoutPaymentRequestDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoExpressCheckoutPaymentRequestDetails.m; sourceTree = "<group>"; };
+		2035F8E116247C700006C59B /* DoExpressCheckoutPaymentResponseDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoExpressCheckoutPaymentResponseDetails.h; sourceTree = "<group>"; };
+		2035F8E216247C700006C59B /* DoExpressCheckoutPaymentResponseDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoExpressCheckoutPaymentResponseDetails.m; sourceTree = "<group>"; };
+		2035F8E316247C700006C59B /* EbayItemPaymentDetailsItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EbayItemPaymentDetailsItem.h; sourceTree = "<group>"; };
+		2035F8E416247C700006C59B /* EbayItemPaymentDetailsItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EbayItemPaymentDetailsItem.m; sourceTree = "<group>"; };
+		2035F8E516247C700006C59B /* ECMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECMacros.h; sourceTree = "<group>"; };
+		2035F8E616247C700006C59B /* EnhancedCheckoutData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnhancedCheckoutData.h; sourceTree = "<group>"; };
+		2035F8E716247C700006C59B /* EnhancedCheckoutData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnhancedCheckoutData.m; sourceTree = "<group>"; };
+		2035F8E816247C700006C59B /* EnhancedItemData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnhancedItemData.h; sourceTree = "<group>"; };
+		2035F8E916247C700006C59B /* EnhancedItemData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnhancedItemData.m; sourceTree = "<group>"; };
+		2035F8EA16247C700006C59B /* EnhancedPaymentInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnhancedPaymentInfo.h; sourceTree = "<group>"; };
+		2035F8EB16247C700006C59B /* EnhancedPaymentInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnhancedPaymentInfo.m; sourceTree = "<group>"; };
+		2035F8EC16247C700006C59B /* FMFDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMFDetails.h; sourceTree = "<group>"; };
+		2035F8ED16247C700006C59B /* FMFDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMFDetails.m; sourceTree = "<group>"; };
+		2035F8EE16247C700006C59B /* FundingSourceDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FundingSourceDetails.h; sourceTree = "<group>"; };
+		2035F8EF16247C700006C59B /* FundingSourceDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FundingSourceDetails.m; sourceTree = "<group>"; };
+		2035F8F016247C700006C59B /* GetExpressCheckoutDetailsResponseDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetExpressCheckoutDetailsResponseDetails.h; sourceTree = "<group>"; };
+		2035F8F116247C700006C59B /* GetExpressCheckoutDetailsResponseDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetExpressCheckoutDetailsResponseDetails.m; sourceTree = "<group>"; };
+		2035F8F216247C700006C59B /* OtherPaymentMethodDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtherPaymentMethodDetails.h; sourceTree = "<group>"; };
+		2035F8F316247C700006C59B /* OtherPaymentMethodDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherPaymentMethodDetails.m; sourceTree = "<group>"; };
+		2035F8F416247C700006C59B /* PayerInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayerInfo.h; sourceTree = "<group>"; };
+		2035F8F516247C700006C59B /* PayerInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayerInfo.m; sourceTree = "<group>"; };
+		2035F8F616247C700006C59B /* PaymentDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentDetails.h; sourceTree = "<group>"; };
+		2035F8F716247C700006C59B /* PaymentDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentDetails.m; sourceTree = "<group>"; };
+		2035F8F816247C700006C59B /* PaymentDetailsItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentDetailsItem.h; sourceTree = "<group>"; };
+		2035F8F916247C700006C59B /* PaymentDetailsItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentDetailsItem.m; sourceTree = "<group>"; };
+		2035F8FA16247C700006C59B /* PaymentError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentError.h; sourceTree = "<group>"; };
+		2035F8FB16247C700006C59B /* PaymentError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentError.m; sourceTree = "<group>"; };
+		2035F8FC16247C700006C59B /* PaymentInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentInfo.h; sourceTree = "<group>"; };
+		2035F8FD16247C700006C59B /* PaymentInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentInfo.m; sourceTree = "<group>"; };
+		2035F8FE16247C700006C59B /* PersonName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonName.h; sourceTree = "<group>"; };
+		2035F8FF16247C700006C59B /* PersonName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonName.m; sourceTree = "<group>"; };
+		2035F90016247C700006C59B /* SellerDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SellerDetails.h; sourceTree = "<group>"; };
+		2035F90116247C700006C59B /* SellerDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SellerDetails.m; sourceTree = "<group>"; };
+		2035F90216247C700006C59B /* SetExpressCheckoutRequestDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetExpressCheckoutRequestDetails.h; sourceTree = "<group>"; };
+		2035F90316247C700006C59B /* SetExpressCheckoutRequestDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetExpressCheckoutRequestDetails.m; sourceTree = "<group>"; };
+		2035F90416247C700006C59B /* ShippingOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShippingOptions.h; sourceTree = "<group>"; };
+		2035F90516247C700006C59B /* ShippingOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShippingOptions.m; sourceTree = "<group>"; };
 		204B4FAA160314A300DF6D8D /* mogen.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = mogen.sh; sourceTree = "<group>"; };
 		204B4FAB160314A300DF6D8D /* mogend.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = mogend.sh; sourceTree = "<group>"; };
 		204B4FB21603165100DF6D8D /* City.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = City.h; sourceTree = "<group>"; };
@@ -319,11 +399,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2035F8C2162448900006C59B /* MessageUI.framework in Frameworks */,
 				848376E915D2FBFA00EC322F /* UIKit.framework in Frameworks */,
 				848376EB15D2FBFA00EC322F /* Foundation.framework in Frameworks */,
 				848376ED15D2FBFA00EC322F /* CoreGraphics.framework in Frameworks */,
 				848376EF15D2FBFA00EC322F /* CoreData.framework in Frameworks */,
 				2092C6C11623096D00F8BCAB /* BlocksKit.framework in Frameworks */,
+				2035F8CB162454890006C59B /* libPayPalEC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +420,79 @@
 			);
 			name = CRMultiRowSelect;
 			path = Libs/CRMultiRowSelect;
+			sourceTree = "<group>";
+		};
+		2035F8C8162454890006C59B /* MECL Library */ = {
+			isa = PBXGroup;
+			children = (
+				2035F8C9162454890006C59B /* libPayPalEC.a */,
+				2035F8CA162454890006C59B /* PayPal.h */,
+			);
+			name = "MECL Library";
+			path = "Libs/MECL Library";
+			sourceTree = "<group>";
+		};
+		2035F8D516247C700006C59B /* NetworkHandler */ = {
+			isa = PBXGroup;
+			children = (
+				2035F8D616247C700006C59B /* ECNetworkHandler.h */,
+				2035F8D716247C700006C59B /* ECNetworkHandler.m */,
+				2035F8D816247C700006C59B /* ECObjects */,
+			);
+			name = NetworkHandler;
+			path = Libs/NetworkHandler;
+			sourceTree = "<group>";
+		};
+		2035F8D816247C700006C59B /* ECObjects */ = {
+			isa = PBXGroup;
+			children = (
+				2035F8D916247C700006C59B /* Address.h */,
+				2035F8DA16247C700006C59B /* Address.m */,
+				2035F8DB16247C700006C59B /* BillingAgreementDetails.h */,
+				2035F8DC16247C700006C59B /* BillingAgreementDetails.m */,
+				2035F8DD16247C700006C59B /* BuyerDetails.h */,
+				2035F8DE16247C700006C59B /* BuyerDetails.m */,
+				2035F8DF16247C700006C59B /* DoExpressCheckoutPaymentRequestDetails.h */,
+				2035F8E016247C700006C59B /* DoExpressCheckoutPaymentRequestDetails.m */,
+				2035F8E116247C700006C59B /* DoExpressCheckoutPaymentResponseDetails.h */,
+				2035F8E216247C700006C59B /* DoExpressCheckoutPaymentResponseDetails.m */,
+				2035F8E316247C700006C59B /* EbayItemPaymentDetailsItem.h */,
+				2035F8E416247C700006C59B /* EbayItemPaymentDetailsItem.m */,
+				2035F8E516247C700006C59B /* ECMacros.h */,
+				2035F8E616247C700006C59B /* EnhancedCheckoutData.h */,
+				2035F8E716247C700006C59B /* EnhancedCheckoutData.m */,
+				2035F8E816247C700006C59B /* EnhancedItemData.h */,
+				2035F8E916247C700006C59B /* EnhancedItemData.m */,
+				2035F8EA16247C700006C59B /* EnhancedPaymentInfo.h */,
+				2035F8EB16247C700006C59B /* EnhancedPaymentInfo.m */,
+				2035F8EC16247C700006C59B /* FMFDetails.h */,
+				2035F8ED16247C700006C59B /* FMFDetails.m */,
+				2035F8EE16247C700006C59B /* FundingSourceDetails.h */,
+				2035F8EF16247C700006C59B /* FundingSourceDetails.m */,
+				2035F8F016247C700006C59B /* GetExpressCheckoutDetailsResponseDetails.h */,
+				2035F8F116247C700006C59B /* GetExpressCheckoutDetailsResponseDetails.m */,
+				2035F8F216247C700006C59B /* OtherPaymentMethodDetails.h */,
+				2035F8F316247C700006C59B /* OtherPaymentMethodDetails.m */,
+				2035F8F416247C700006C59B /* PayerInfo.h */,
+				2035F8F516247C700006C59B /* PayerInfo.m */,
+				2035F8F616247C700006C59B /* PaymentDetails.h */,
+				2035F8F716247C700006C59B /* PaymentDetails.m */,
+				2035F8F816247C700006C59B /* PaymentDetailsItem.h */,
+				2035F8F916247C700006C59B /* PaymentDetailsItem.m */,
+				2035F8FA16247C700006C59B /* PaymentError.h */,
+				2035F8FB16247C700006C59B /* PaymentError.m */,
+				2035F8FC16247C700006C59B /* PaymentInfo.h */,
+				2035F8FD16247C700006C59B /* PaymentInfo.m */,
+				2035F8FE16247C700006C59B /* PersonName.h */,
+				2035F8FF16247C700006C59B /* PersonName.m */,
+				2035F90016247C700006C59B /* SellerDetails.h */,
+				2035F90116247C700006C59B /* SellerDetails.m */,
+				2035F90216247C700006C59B /* SetExpressCheckoutRequestDetails.h */,
+				2035F90316247C700006C59B /* SetExpressCheckoutRequestDetails.m */,
+				2035F90416247C700006C59B /* ShippingOptions.h */,
+				2035F90516247C700006C59B /* ShippingOptions.m */,
+			);
+			path = ECObjects;
 			sourceTree = "<group>";
 		};
 		204B4FA9160314A300DF6D8D /* Scripts */ = {
@@ -457,6 +612,9 @@
 				2092C6431622E8FA00F8BCAB /* OrderViewController.xib */,
 				2092C6B61623024F00F8BCAB /* PaymentSelectingViewController.h */,
 				2092C6B71623024F00F8BCAB /* PaymentSelectingViewController.m */,
+				2035F8D016247A330006C59B /* ReviewOrderController.h */,
+				2035F8D116247A330006C59B /* ReviewOrderController.m */,
+				2035F8D216247A340006C59B /* ReviewOrderController.xib */,
 				2092C6B91623024F00F8BCAB /* PaymentViewController.h */,
 				2092C6BA1623024F00F8BCAB /* PaymentViewController.m */,
 			);
@@ -632,6 +790,7 @@
 		848376E715D2FBFA00EC322F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2035F8C1162448900006C59B /* MessageUI.framework */,
 				2092C6C01623096D00F8BCAB /* BlocksKit.framework */,
 				848376E815D2FBFA00EC322F /* UIKit.framework */,
 				848376EA15D2FBFA00EC322F /* Foundation.framework */,
@@ -717,6 +876,8 @@
 		84D5026B15D445A2005CA9FF /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				2035F8D516247C700006C59B /* NetworkHandler */,
+				2035F8C8162454890006C59B /* MECL Library */,
 				2035EC2D16120B3300A5945E /* CRMultiRowSelect */,
 				20AB902616108FB2005D96F5 /* V8HorizontalPickerView */,
 				204DADFD160745910045D144 /* PagedFlowView */,
@@ -908,6 +1069,7 @@
 				20AB90801610ACAC005D96F5 /* fav_star.png in Resources */,
 				20AB90881610B1AD005D96F5 /* Default-568h@2x.png in Resources */,
 				2092C6451622E8FA00F8BCAB /* OrderViewController.xib in Resources */,
+				2035F8D416247A340006C59B /* ReviewOrderController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -975,6 +1137,30 @@
 				2092C6441622E8FA00F8BCAB /* OrderViewController.m in Sources */,
 				2092C6BC1623024F00F8BCAB /* PaymentSelectingViewController.m in Sources */,
 				2092C6BE1623024F00F8BCAB /* PaymentViewController.m in Sources */,
+				2035F8D316247A340006C59B /* ReviewOrderController.m in Sources */,
+				2035F90616247C700006C59B /* ECNetworkHandler.m in Sources */,
+				2035F90716247C700006C59B /* Address.m in Sources */,
+				2035F90816247C700006C59B /* BillingAgreementDetails.m in Sources */,
+				2035F90916247C700006C59B /* BuyerDetails.m in Sources */,
+				2035F90A16247C700006C59B /* DoExpressCheckoutPaymentRequestDetails.m in Sources */,
+				2035F90B16247C700006C59B /* DoExpressCheckoutPaymentResponseDetails.m in Sources */,
+				2035F90C16247C700006C59B /* EbayItemPaymentDetailsItem.m in Sources */,
+				2035F90D16247C700006C59B /* EnhancedCheckoutData.m in Sources */,
+				2035F90E16247C700006C59B /* EnhancedItemData.m in Sources */,
+				2035F90F16247C700006C59B /* EnhancedPaymentInfo.m in Sources */,
+				2035F91016247C700006C59B /* FMFDetails.m in Sources */,
+				2035F91116247C700006C59B /* FundingSourceDetails.m in Sources */,
+				2035F91216247C700006C59B /* GetExpressCheckoutDetailsResponseDetails.m in Sources */,
+				2035F91316247C700006C59B /* OtherPaymentMethodDetails.m in Sources */,
+				2035F91416247C700006C59B /* PayerInfo.m in Sources */,
+				2035F91516247C700006C59B /* PaymentDetails.m in Sources */,
+				2035F91616247C700006C59B /* PaymentDetailsItem.m in Sources */,
+				2035F91716247C700006C59B /* PaymentError.m in Sources */,
+				2035F91816247C700006C59B /* PaymentInfo.m in Sources */,
+				2035F91916247C700006C59B /* PersonName.m in Sources */,
+				2035F91A16247C700006C59B /* SellerDetails.m in Sources */,
+				2035F91B16247C700006C59B /* SetExpressCheckoutRequestDetails.m in Sources */,
+				2035F91C16247C700006C59B /* ShippingOptions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1046,6 +1232,14 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Supporting Files/Flowers-Prefix.pch";
 				INFOPLIST_FILE = "Supporting Files/Flowers-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Libs/MECL Library\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1061,6 +1255,14 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Supporting Files/Flowers-Prefix.pch";
 				INFOPLIST_FILE = "Supporting Files/Flowers-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Libs/MECL Library\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

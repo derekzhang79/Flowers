@@ -8,16 +8,24 @@
 
 #import "PaymentSelectingViewController.h"
 
-@implementation PaymentSelectingViewController
-@synthesize arrayWithPaymentMethods, paymentMethod;
+#define darkBlueColor [UIColor colorWithRed:60.0f/255.0f green:131.0f/255.0f blue:194.0f/255.0f alpha:1.0f]
 
+@interface PaymentSelectingViewController ()
+
+@property (nonatomic, retain) NSArray *arrayWithPaymentMethods;
+
+@end
+
+@implementation PaymentSelectingViewController
+
+@synthesize arrayWithPaymentMethods, paymentMethod, delegate;
 
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    arrayWithPaymentMethods = [NSArray arrayWithObjects:@"WebMoney", @"Yandex.деньги", @"VISA", @"Master card", nil];
+    self.arrayWithPaymentMethods = [NSArray arrayWithObjects:@"WebMoney", @"Yandex", @"VISA", @"Master card", nil];
 }
 
 
@@ -38,7 +46,13 @@
     }
     
     cell.textLabel.text = [arrayWithPaymentMethods objectAtIndex:indexPath.row];
-    cell.accessoryView = UITableViewCellAccessoryNone;
+    if (indexPath.row == (int)self.paymentMethod) {
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+        cell.textLabel.textColor = darkBlueColor;
+    } else {
+        cell.accessoryType = UITableViewCellAccessoryNone;
+        cell.textLabel.textColor = [UIColor blackColor];
+    }
     
     return cell;
 }
@@ -47,12 +61,16 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    for (UITableViewCell *cell in [tableView visibleCells]) {
-        cell.accessoryView = UITableViewCellAccessoryNone;
+    for (UITableViewCell *cell in tableView.visibleCells) {
+        cell.accessoryType = UITableViewCellAccessoryNone;
+        cell.textLabel.textColor = [UIColor blackColor];
     }
-    [[tableView cellForRowAtIndexPath:indexPath] setAccessoryType:UITableViewCellAccessoryCheckmark];
-    paymentMethod = [[[tableView cellForRowAtIndexPath:indexPath] textLabel] text];
-    [self.navigationController popViewControllerAnimated:YES];
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    [cell setSelected:NO animated:YES];
+    cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    cell.textLabel.textColor = darkBlueColor;
+    paymentMethod = (PaymentMethod)indexPath.row;
+    [self.delegate setNewPymentMethod:paymentMethod];
 }
 
 @end

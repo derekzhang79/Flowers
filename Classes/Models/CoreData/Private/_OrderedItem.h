@@ -6,6 +6,7 @@
 
 extern const struct OrderedItemAttributes {
 	 NSString *count;
+	 NSString *serverId;
 } OrderedItemAttributes;
 
 extern const struct OrderedItemRelationships {
@@ -18,6 +19,7 @@ extern const struct OrderedItemFetchedProperties {
 
 @class Item;
 @class Order;
+
 
 
 
@@ -41,6 +43,18 @@ extern const struct OrderedItemFetchedProperties {
 - (void)setCountValue:(int32_t)value_;
 
 //- (BOOL)validateCount:(id*)value_ error:(NSError**)error_;
+
+
+
+
+@property (nonatomic, retain) NSNumber *serverId;
+
+
+@property int32_t serverIdValue;
+- (int32_t)serverIdValue;
+- (void)setServerIdValue:(int32_t)value_;
+
+//- (BOOL)validateServerId:(id*)value_ error:(NSError**)error_;
 
 
 
@@ -75,6 +89,15 @@ extern const struct OrderedItemFetchedProperties {
 
 - (int32_t)primitiveCountValue;
 - (void)setPrimitiveCountValue:(int32_t)value_;
+
+
+
+
+- (NSNumber *)primitiveServerId;
+- (void)setPrimitiveServerId:(NSNumber *)value;
+
+- (int32_t)primitiveServerIdValue;
+- (void)setPrimitiveServerIdValue:(int32_t)value_;
 
 
 

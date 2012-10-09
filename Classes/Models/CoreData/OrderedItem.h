@@ -14,8 +14,10 @@
 + (OrderedItem *)findOneWithUID:(NSString *)uid;
 
 + (NSArray *)findAllWithUIDArray:(NSArray *)uidsArray;
++ (OrderedItem *)findOneWithItemUID:(NSString *)uid;
 + (NSArray *)findAll;
 
++ (void)deleteOneWithUID:(NSString *)uid;
 + (void)deleteAll;
 
 @end

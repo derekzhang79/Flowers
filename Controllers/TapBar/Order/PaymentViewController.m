@@ -8,6 +8,7 @@
 
 #import "PaymentViewController.h"
 #import <BlocksKit/BlocksKit.h>
+#import "PayPal.h"
 
 @interface PaymentViewController () <UIWebViewDelegate>
 
@@ -27,11 +28,21 @@
     self.webView = [[UIWebView alloc] init];
     self.webView.delegate = self;
     self.view = self.webView;
-    NSURL *imaladecLink = [NSURL URLWithString:@"http://m.paypal.com"];
-    [self.webView loadRequest:[NSURLRequest requestWithURL:imaladecLink]];
+    
+//    NSURL *imaladecLink = [NSURL URLWithString:@"http://m.paypal.com"];
+//    [self.webView loadRequest:[NSURLRequest requestWithURL:imaladecLink]];
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(dismissModalViewControllerAnimated:)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(dismissYourself)];
 }
+
+- (void)dismissYourself
+{
+    [self.webView stopLoading];
+    [self dismissModalViewControllerAnimated:YES];
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+}
+
+#pragma mark - UIWebView delegate
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView
 {
@@ -40,14 +51,17 @@
 
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
 {
-    UIAlertView *alertView = [UIAlertView alertViewWithTitle:@"Ошибка!" message:@"У тебя кончился интернет."];
-    [alertView show];
-    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];    
+    if (error.code != -999) {
+        UIAlertView *alertView = [UIAlertView alertViewWithTitle:@"Ошибка!" message:@"У тебя кончился интернет."];
+        [alertView setCancelButtonWithTitle:@"ОК" handler:nil];
+        [alertView show];
+    }
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
 }
 
 - (void)dealloc
 {
-    [webView release];
+    self.webView = nil;
     [super dealloc];
 }
 
