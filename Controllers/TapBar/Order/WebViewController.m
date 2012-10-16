@@ -60,7 +60,7 @@
 
 -(void)viewWillAppear:(BOOL)animated {
 	[super viewWillAppear:animated];
-	self.loadingView;
+	[self loadingView];
 	[self.navigationController setNavigationBarHidden:TRUE animated:TRUE];
 }
 

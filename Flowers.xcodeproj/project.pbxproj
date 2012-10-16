@@ -84,6 +84,10 @@
 		204DADDD16071FDF0045D144 /* StarFullLarge.png in Resources */ = {isa = PBXBuildFile; fileRef = 204DADD516071FDF0045D144 /* StarFullLarge.png */; };
 		204DADDE16071FDF0045D144 /* StarFullLarge@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 204DADD616071FDF0045D144 /* StarFullLarge@2x.png */; };
 		204DAE00160745920045D144 /* PagedFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 204DADFF160745920045D144 /* PagedFlowView.m */; };
+		206544F7162D4C9700388850 /* BButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 206544F6162D4C9700388850 /* BButton.m */; settings = {COMPILER_FLAGS = "-fobjc-arc "; }; };
+		206544FE162D51E500388850 /* drop_down_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 206544FD162D51E500388850 /* drop_down_button.png */; };
+		20654500162D531600388850 /* drop_down_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 206544FF162D531600388850 /* drop_down_button@2x.png */; };
+		20654506162D57CC00388850 /* CMB.png in Resources */ = {isa = PBXBuildFile; fileRef = 20654505162D57CB00388850 /* CMB.png */; };
 		2092C63E1622DAD200F8BCAB /* BasketCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2092C63D1622DAD200F8BCAB /* BasketCell.m */; };
 		2092C6441622E8FA00F8BCAB /* OrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2092C6421622E8FA00F8BCAB /* OrderViewController.m */; };
 		2092C6451622E8FA00F8BCAB /* OrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2092C6431622E8FA00F8BCAB /* OrderViewController.xib */; };
@@ -118,7 +122,6 @@
 		20AB907516109B9B005D96F5 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20AB905F16109B9B005D96F5 /* RootViewController.xib */; };
 		20AB907C16109B9B005D96F5 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AB906B16109B9B005D96F5 /* SettingsViewController.m */; };
 		20AB90801610ACAC005D96F5 /* fav_star.png in Resources */ = {isa = PBXBuildFile; fileRef = 20AB907F1610ACAC005D96F5 /* fav_star.png */; };
-		20AB90881610B1AD005D96F5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20AB90871610B1AD005D96F5 /* Default-568h@2x.png */; };
 		847D5C4815E29D7900E0EEC3 /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 847D5C3915E29D7900E0EEC3 /* GTMNSString+HTML.m */; };
 		847D5C4915E29D7900E0EEC3 /* NSDictionary+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 847D5C3B15E29D7900E0EEC3 /* NSDictionary+Extensions.m */; };
 		847D5C4A15E29D7900E0EEC3 /* NSString+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 847D5C3D15E29D7900E0EEC3 /* NSString+Extensions.m */; };
@@ -305,6 +308,11 @@
 		204DADD616071FDF0045D144 /* StarFullLarge@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "StarFullLarge@2x.png"; sourceTree = "<group>"; };
 		204DADFE160745920045D144 /* PagedFlowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PagedFlowView.h; sourceTree = "<group>"; };
 		204DADFF160745920045D144 /* PagedFlowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PagedFlowView.m; sourceTree = "<group>"; };
+		206544F5162D4C9700388850 /* BButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BButton.h; sourceTree = "<group>"; };
+		206544F6162D4C9700388850 /* BButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BButton.m; sourceTree = "<group>"; };
+		206544FD162D51E500388850 /* drop_down_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drop_down_button.png; sourceTree = "<group>"; };
+		206544FF162D531600388850 /* drop_down_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "drop_down_button@2x.png"; sourceTree = "<group>"; };
+		20654505162D57CB00388850 /* CMB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CMB.png; sourceTree = "<group>"; };
 		2092C63C1622DAD200F8BCAB /* BasketCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasketCell.h; sourceTree = "<group>"; };
 		2092C63D1622DAD200F8BCAB /* BasketCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasketCell.m; sourceTree = "<group>"; };
 		2092C6411622E8FA00F8BCAB /* OrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OrderViewController.h; path = Order/OrderViewController.h; sourceTree = "<group>"; };
@@ -352,7 +360,6 @@
 		20AB906A16109B9B005D96F5 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		20AB906B16109B9B005D96F5 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		20AB907F1610ACAC005D96F5 /* fav_star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fav_star.png; sourceTree = "<group>"; };
-		20AB90871610B1AD005D96F5 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		847D5C3815E29D7900E0EEC3 /* GTMNSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSString+HTML.h"; sourceTree = "<group>"; };
 		847D5C3915E29D7900E0EEC3 /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+HTML.m"; sourceTree = "<group>"; };
 		847D5C3A15E29D7900E0EEC3 /* NSDictionary+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Extensions.h"; sourceTree = "<group>"; };
@@ -657,6 +664,16 @@
 			path = Libs/PagedFlowView;
 			sourceTree = "<group>";
 		};
+		206544F4162D4C9700388850 /* BButton */ = {
+			isa = PBXGroup;
+			children = (
+				206544F5162D4C9700388850 /* BButton.h */,
+				206544F6162D4C9700388850 /* BButton.m */,
+			);
+			name = BButton;
+			path = Libs/BButton;
+			sourceTree = "<group>";
+		};
 		2092C6401622E8C100F8BCAB /* Order */ = {
 			isa = PBXGroup;
 			children = (
@@ -931,6 +948,7 @@
 		84D5026B15D445A2005CA9FF /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				206544F4162D4C9700388850 /* BButton */,
 				2035F8D516247C700006C59B /* NetworkHandler */,
 				2035F8C8162454890006C59B /* MECL Library */,
 				2035EC2D16120B3300A5945E /* CRMultiRowSelect */,
@@ -1007,10 +1025,12 @@
 		84DDACE415EF51890005B132 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				20654505162D57CB00388850 /* CMB.png */,
+				206544FF162D531600388850 /* drop_down_button@2x.png */,
+				206544FD162D51E500388850 /* drop_down_button.png */,
 				2001D4971625BB3400EFF320 /* moscow.png */,
 				2001D4981625BB3400EFF320 /* piter.png */,
 				2001D4951625B90000EFF320 /* kazan.png */,
-				20AB90871610B1AD005D96F5 /* Default-568h@2x.png */,
 				20AB907F1610ACAC005D96F5 /* fav_star.png */,
 				20AB900E1610856E005D96F5 /* flower_1.png */,
 				20AB900F1610856E005D96F5 /* flower_2.png */,
@@ -1125,7 +1145,6 @@
 				20AB907316109B9B005D96F5 /* ItemViewController.xib in Resources */,
 				20AB907516109B9B005D96F5 /* RootViewController.xib in Resources */,
 				20AB90801610ACAC005D96F5 /* fav_star.png in Resources */,
-				20AB90881610B1AD005D96F5 /* Default-568h@2x.png in Resources */,
 				2092C6451622E8FA00F8BCAB /* OrderViewController.xib in Resources */,
 				2001D4791625978300EFF320 /* ReviewOrderViewController.xib in Resources */,
 				2001D4891625994600EFF320 /* bg.png in Resources */,
@@ -1143,6 +1162,9 @@
 				2001D4961625B90000EFF320 /* kazan.png in Resources */,
 				2001D4991625BB3400EFF320 /* moscow.png in Resources */,
 				2001D49A1625BB3400EFF320 /* piter.png in Resources */,
+				206544FE162D51E500388850 /* drop_down_button.png in Resources */,
+				20654500162D531600388850 /* drop_down_button@2x.png in Resources */,
+				20654506162D57CC00388850 /* CMB.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1235,6 +1257,7 @@
 				2035F91C16247C700006C59B /* ShippingOptions.m in Sources */,
 				2001D47B162597EC00EFF320 /* ReviewOrderViewController.m in Sources */,
 				2001D49D1625C6ED00EFF320 /* WebViewController.m in Sources */,
+				206544F7162D4C9700388850 /* BButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

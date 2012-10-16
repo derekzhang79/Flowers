@@ -34,6 +34,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+    [self.window makeKeyAndVisible];
     
     RootViewController *rootVC = [[[RootViewController alloc] init] autorelease];
     UINavigationController *rootNavController = [[[UINavigationController alloc] initWithRootViewController:rootVC] autorelease];
@@ -53,7 +54,7 @@
     self.tabBarController = [[[UITabBarController alloc] init] autorelease];
     self.tabBarController.viewControllers = [NSArray arrayWithObjects:rootNavController, wishListNavController, basketNavController, settingsNavController, nil];
     self.window.rootViewController = self.tabBarController;
-    [self.window makeKeyAndVisible];
+//    [self.window makeKeyAndVisible];
     return YES;
 }
 

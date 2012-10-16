@@ -47,6 +47,7 @@
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{222, 308}, {93, 30}}</string>
 								<reference key="NSSuperview" ref="10517714"/>
+								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="522442950"/>
 								<string key="NSReuseIdentifierKey">_NS:328</string>
 								<bool key="IBUIOpaque">NO</bool>
@@ -75,6 +76,7 @@
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{259, 234}, {61, 54}}</string>
 								<reference key="NSSuperview" ref="10517714"/>
+								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="239088416"/>
 								<string key="NSReuseIdentifierKey">_NS:225</string>
 								<bool key="IBUIOpaque">NO</bool>
@@ -112,6 +114,7 @@
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{5, 360}, {310, 44}}</string>
 								<reference key="NSSuperview" ref="10517714"/>
+								<reference key="NSWindow"/>
 								<string key="NSReuseIdentifierKey">_NS:225</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -133,6 +136,7 @@
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{0, 234}, {258, 71}}</string>
 								<reference key="NSSuperview" ref="10517714"/>
+								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="385225375"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<object class="NSColor" key="IBUIBackgroundColor">
@@ -146,6 +150,7 @@
 								<int key="NSvFlags">292</int>
 								<string key="NSFrameSize">{320, 200}</string>
 								<reference key="NSSuperview" ref="10517714"/>
+								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="50873837"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<object class="NSColor" key="IBUIBackgroundColor" id="164245032">
@@ -160,6 +165,7 @@
 								<object class="NSPSMatrix" key="NSFrameMatrix"/>
 								<string key="NSFrame">{{0, 198}, {320, 36}}</string>
 								<reference key="NSSuperview" ref="10517714"/>
+								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="977703559"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<reference key="IBUIBackgroundColor" ref="164245032"/>
@@ -174,6 +180,7 @@
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{5, 300}, {205, 40}}</string>
 								<reference key="NSSuperview" ref="10517714"/>
+								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="216968170"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<object class="NSColor" key="IBUIBackgroundColor">
@@ -188,6 +195,7 @@
 						</array>
 						<string key="NSFrameSize">{320, 430}</string>
 						<reference key="NSSuperview" ref="191373211"/>
+						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="284916273"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIAutoresizesSubviews">NO</bool>
@@ -198,6 +206,7 @@
 				</array>
 				<string key="NSFrame">{{0, 64}, {320, 430}}</string>
 				<reference key="NSSuperview"/>
+				<reference key="NSWindow"/>
 				<reference key="NSNextKeyView" ref="10517714"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">3</int>
@@ -407,7 +416,106 @@
 			<nil key="sourceID"/>
 			<int key="maxID">38</int>
 		</object>
-		<object class="IBClassDescriber" key="IBDocument.Classes"/>
+		<object class="IBClassDescriber" key="IBDocument.Classes">
+			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
+				<object class="IBPartialClassDescription">
+					<string key="className">DLStarRatingControl</string>
+					<string key="superclassName">UIControl</string>
+					<object class="NSMutableDictionary" key="outlets">
+						<string key="NS.key.0">delegate</string>
+						<string key="NS.object.0">id</string>
+					</object>
+					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<string key="NS.key.0">delegate</string>
+						<object class="IBToOneOutletInfo" key="NS.object.0">
+							<string key="name">delegate</string>
+							<string key="candidateClassName">id</string>
+						</object>
+					</object>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/DLStarRatingControl.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">ItemViewController</string>
+					<string key="superclassName">UIViewController</string>
+					<dictionary class="NSMutableDictionary" key="actions">
+						<string key="addItemToBasket:">id</string>
+						<string key="addItemToFavorites:">id</string>
+						<string key="pageControlValueDidChange:">id</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="actionInfosByName">
+						<object class="IBActionInfo" key="addItemToBasket:">
+							<string key="name">addItemToBasket:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="addItemToFavorites:">
+							<string key="name">addItemToFavorites:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="pageControlValueDidChange:">
+							<string key="name">pageControlValueDidChange:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="outlets">
+						<string key="hFlowView">PagedFlowView</string>
+						<string key="hPageControl">UIPageControl</string>
+						<string key="horizontalPickerView">V8HorizontalPickerView</string>
+						<string key="priceLabel">UILabel</string>
+						<string key="scrollView">UIScrollView</string>
+						<string key="starRatingControl">DLStarRatingControl</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<object class="IBToOneOutletInfo" key="hFlowView">
+							<string key="name">hFlowView</string>
+							<string key="candidateClassName">PagedFlowView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="hPageControl">
+							<string key="name">hPageControl</string>
+							<string key="candidateClassName">UIPageControl</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="horizontalPickerView">
+							<string key="name">horizontalPickerView</string>
+							<string key="candidateClassName">V8HorizontalPickerView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="priceLabel">
+							<string key="name">priceLabel</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="scrollView">
+							<string key="name">scrollView</string>
+							<string key="candidateClassName">UIScrollView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="starRatingControl">
+							<string key="name">starRatingControl</string>
+							<string key="candidateClassName">DLStarRatingControl</string>
+						</object>
+					</dictionary>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/ItemViewController.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">PagedFlowView</string>
+					<string key="superclassName">UIView</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/PagedFlowView.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">V8HorizontalPickerView</string>
+					<string key="superclassName">UIView</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/V8HorizontalPickerView.h</string>
+					</object>
+				</object>
+			</array>
+		</object>
 		<int key="IBDocument.localizationMode">0</int>
 		<string key="IBDocument.TargetRuntimeIdentifier">IBCocoaTouchFramework</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginDeclaredDependencyDefaults">
