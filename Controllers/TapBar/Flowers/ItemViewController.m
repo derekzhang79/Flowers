@@ -6,12 +6,12 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
+#import <QuartzCore/QuartzCore.h>
 #import "ItemViewController.h"
 #import "Item.h"
 #import "OrderedItem.h"
 #import "DLStarRatingControl.h"
 #import "PagedFlowView.h"
-#import <QuartzCore/QuartzCore.h>
 #import "V8HorizontalPickerView.h"
 
 @interface ItemViewController () <PagedFlowViewDelegate,PagedFlowViewDataSource, V8HorizontalPickerViewDataSource, V8HorizontalPickerViewDelegate>
@@ -131,7 +131,7 @@
     [hFlowView scrollToPage:pageControl.currentPage];
 }
 
-#pragma mark - V*HorizontalPickerViewDelegate
+#pragma mark - V8HorizontalPickerViewDelegate
 
 - (NSInteger)numberOfElementsInHorizontalPickerView:(V8HorizontalPickerView *)picker
 {

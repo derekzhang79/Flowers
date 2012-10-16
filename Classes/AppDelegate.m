@@ -35,7 +35,7 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     
-    RootViewController *rootVC = [[[RootViewController alloc] initWithStyle:UITableViewStyleGrouped] autorelease];
+    RootViewController *rootVC = [[[RootViewController alloc] init] autorelease];
     UINavigationController *rootNavController = [[[UINavigationController alloc] initWithRootViewController:rootVC] autorelease];
     
     WishListViewController *wishListVC = [[[WishListViewController alloc] initWithNibName:@"WishListViewController" bundle:nil] autorelease];

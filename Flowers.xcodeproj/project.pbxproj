@@ -7,11 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2001D4791625978300EFF320 /* ReviewOrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2001D4781625978300EFF320 /* ReviewOrderViewController.xib */; };
+		2001D47B162597EC00EFF320 /* ReviewOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2001D47A162597EC00EFF320 /* ReviewOrderViewController.m */; };
+		2001D4891625994600EFF320 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 2001D47D1625994600EFF320 /* bg.png */; };
+		2001D48A1625994600EFF320 /* greenbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 2001D47E1625994600EFF320 /* greenbutton.png */; };
+		2001D48B1625994600EFF320 /* LargebuttonGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 2001D47F1625994600EFF320 /* LargebuttonGreen.png */; };
+		2001D48C1625994600EFF320 /* pizza.png in Resources */ = {isa = PBXBuildFile; fileRef = 2001D4801625994600EFF320 /* pizza.png */; };
+		2001D48D1625994600EFF320 /* pizza_ordercomplete.png in Resources */ = {isa = PBXBuildFile; fileRef = 2001D4811625994600EFF320 /* pizza_ordercomplete.png */; };
+		2001D48E1625994600EFF320 /* pizzabackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 2001D4821625994600EFF320 /* pizzabackground.png */; };
+		2001D48F1625994600EFF320 /* pizzabutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 2001D4831625994600EFF320 /* pizzabutton.png */; };
+		2001D4901625994600EFF320 /* pizzaexpress.png in Resources */ = {isa = PBXBuildFile; fileRef = 2001D4841625994600EFF320 /* pizzaexpress.png */; };
+		2001D4911625994600EFF320 /* pizzaexpresstitle.png in Resources */ = {isa = PBXBuildFile; fileRef = 2001D4851625994600EFF320 /* pizzaexpresstitle.png */; };
+		2001D4921625994600EFF320 /* pizzatitle.png in Resources */ = {isa = PBXBuildFile; fileRef = 2001D4861625994600EFF320 /* pizzatitle.png */; };
+		2001D4931625994600EFF320 /* tableViewArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 2001D4871625994600EFF320 /* tableViewArrow.png */; };
+		2001D4941625994600EFF320 /* whitespacer.png in Resources */ = {isa = PBXBuildFile; fileRef = 2001D4881625994600EFF320 /* whitespacer.png */; };
+		2001D4961625B90000EFF320 /* kazan.png in Resources */ = {isa = PBXBuildFile; fileRef = 2001D4951625B90000EFF320 /* kazan.png */; };
+		2001D4991625BB3400EFF320 /* moscow.png in Resources */ = {isa = PBXBuildFile; fileRef = 2001D4971625BB3400EFF320 /* moscow.png */; };
+		2001D49A1625BB3400EFF320 /* piter.png in Resources */ = {isa = PBXBuildFile; fileRef = 2001D4981625BB3400EFF320 /* piter.png */; };
+		2001D49D1625C6ED00EFF320 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2001D49C1625C6ED00EFF320 /* WebViewController.m */; };
 		2035EC3016120B3300A5945E /* CRTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2035EC2F16120B3300A5945E /* CRTableViewCell.m */; };
 		2035F8C2162448900006C59B /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2035F8C1162448900006C59B /* MessageUI.framework */; };
 		2035F8CB162454890006C59B /* libPayPalEC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2035F8C9162454890006C59B /* libPayPalEC.a */; };
-		2035F8D316247A340006C59B /* ReviewOrderController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2035F8D116247A330006C59B /* ReviewOrderController.m */; };
-		2035F8D416247A340006C59B /* ReviewOrderController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2035F8D216247A340006C59B /* ReviewOrderController.xib */; };
 		2035F90616247C700006C59B /* ECNetworkHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2035F8D716247C700006C59B /* ECNetworkHandler.m */; };
 		2035F90716247C700006C59B /* Address.m in Sources */ = {isa = PBXBuildFile; fileRef = 2035F8DA16247C700006C59B /* Address.m */; };
 		2035F90816247C700006C59B /* BillingAgreementDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 2035F8DC16247C700006C59B /* BillingAgreementDetails.m */; };
@@ -169,14 +185,31 @@
 /* End PBXBuildRule section */
 
 /* Begin PBXFileReference section */
+		2001D4771625978300EFF320 /* ReviewOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReviewOrderViewController.h; path = Order/ReviewOrderViewController.h; sourceTree = "<group>"; };
+		2001D4781625978300EFF320 /* ReviewOrderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ReviewOrderViewController.xib; path = Order/ReviewOrderViewController.xib; sourceTree = "<group>"; };
+		2001D47A162597EC00EFF320 /* ReviewOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReviewOrderViewController.m; path = Order/ReviewOrderViewController.m; sourceTree = "<group>"; };
+		2001D47D1625994600EFF320 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		2001D47E1625994600EFF320 /* greenbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenbutton.png; sourceTree = "<group>"; };
+		2001D47F1625994600EFF320 /* LargebuttonGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LargebuttonGreen.png; sourceTree = "<group>"; };
+		2001D4801625994600EFF320 /* pizza.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pizza.png; sourceTree = "<group>"; };
+		2001D4811625994600EFF320 /* pizza_ordercomplete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pizza_ordercomplete.png; sourceTree = "<group>"; };
+		2001D4821625994600EFF320 /* pizzabackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pizzabackground.png; sourceTree = "<group>"; };
+		2001D4831625994600EFF320 /* pizzabutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pizzabutton.png; sourceTree = "<group>"; };
+		2001D4841625994600EFF320 /* pizzaexpress.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pizzaexpress.png; sourceTree = "<group>"; };
+		2001D4851625994600EFF320 /* pizzaexpresstitle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pizzaexpresstitle.png; sourceTree = "<group>"; };
+		2001D4861625994600EFF320 /* pizzatitle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pizzatitle.png; sourceTree = "<group>"; };
+		2001D4871625994600EFF320 /* tableViewArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tableViewArrow.png; sourceTree = "<group>"; };
+		2001D4881625994600EFF320 /* whitespacer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whitespacer.png; sourceTree = "<group>"; };
+		2001D4951625B90000EFF320 /* kazan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kazan.png; sourceTree = "<group>"; };
+		2001D4971625BB3400EFF320 /* moscow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = moscow.png; sourceTree = "<group>"; };
+		2001D4981625BB3400EFF320 /* piter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = piter.png; sourceTree = "<group>"; };
+		2001D49B1625C6ED00EFF320 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebViewController.h; path = Order/WebViewController.h; sourceTree = "<group>"; };
+		2001D49C1625C6ED00EFF320 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebViewController.m; path = Order/WebViewController.m; sourceTree = "<group>"; };
 		2035EC2E16120B3300A5945E /* CRTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRTableViewCell.h; sourceTree = "<group>"; };
 		2035EC2F16120B3300A5945E /* CRTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRTableViewCell.m; sourceTree = "<group>"; };
 		2035F8C1162448900006C59B /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		2035F8C9162454890006C59B /* libPayPalEC.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPayPalEC.a; sourceTree = "<group>"; };
 		2035F8CA162454890006C59B /* PayPal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPal.h; sourceTree = "<group>"; };
-		2035F8D016247A330006C59B /* ReviewOrderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReviewOrderController.h; path = Order/ReviewOrderController.h; sourceTree = "<group>"; };
-		2035F8D116247A330006C59B /* ReviewOrderController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReviewOrderController.m; path = Order/ReviewOrderController.m; sourceTree = "<group>"; };
-		2035F8D216247A340006C59B /* ReviewOrderController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ReviewOrderController.xib; path = Order/ReviewOrderController.xib; sourceTree = "<group>"; };
 		2035F8D616247C700006C59B /* ECNetworkHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECNetworkHandler.h; sourceTree = "<group>"; };
 		2035F8D716247C700006C59B /* ECNetworkHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECNetworkHandler.m; sourceTree = "<group>"; };
 		2035F8D916247C700006C59B /* Address.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Address.h; sourceTree = "<group>"; };
@@ -412,6 +445,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2001D47C1625994600EFF320 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				2001D47D1625994600EFF320 /* bg.png */,
+				2001D47E1625994600EFF320 /* greenbutton.png */,
+				2001D47F1625994600EFF320 /* LargebuttonGreen.png */,
+				2001D4801625994600EFF320 /* pizza.png */,
+				2001D4811625994600EFF320 /* pizza_ordercomplete.png */,
+				2001D4821625994600EFF320 /* pizzabackground.png */,
+				2001D4831625994600EFF320 /* pizzabutton.png */,
+				2001D4841625994600EFF320 /* pizzaexpress.png */,
+				2001D4851625994600EFF320 /* pizzaexpresstitle.png */,
+				2001D4861625994600EFF320 /* pizzatitle.png */,
+				2001D4871625994600EFF320 /* tableViewArrow.png */,
+				2001D4881625994600EFF320 /* whitespacer.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		2035EC2D16120B3300A5945E /* CRMultiRowSelect */ = {
 			isa = PBXGroup;
 			children = (
@@ -425,6 +477,7 @@
 		2035F8C8162454890006C59B /* MECL Library */ = {
 			isa = PBXGroup;
 			children = (
+				2001D47C1625994600EFF320 /* images */,
 				2035F8C9162454890006C59B /* libPayPalEC.a */,
 				2035F8CA162454890006C59B /* PayPal.h */,
 			);
@@ -610,11 +663,13 @@
 				2092C6411622E8FA00F8BCAB /* OrderViewController.h */,
 				2092C6421622E8FA00F8BCAB /* OrderViewController.m */,
 				2092C6431622E8FA00F8BCAB /* OrderViewController.xib */,
+				2001D4771625978300EFF320 /* ReviewOrderViewController.h */,
+				2001D47A162597EC00EFF320 /* ReviewOrderViewController.m */,
+				2001D4781625978300EFF320 /* ReviewOrderViewController.xib */,
+				2001D49B1625C6ED00EFF320 /* WebViewController.h */,
+				2001D49C1625C6ED00EFF320 /* WebViewController.m */,
 				2092C6B61623024F00F8BCAB /* PaymentSelectingViewController.h */,
 				2092C6B71623024F00F8BCAB /* PaymentSelectingViewController.m */,
-				2035F8D016247A330006C59B /* ReviewOrderController.h */,
-				2035F8D116247A330006C59B /* ReviewOrderController.m */,
-				2035F8D216247A340006C59B /* ReviewOrderController.xib */,
 				2092C6B91623024F00F8BCAB /* PaymentViewController.h */,
 				2092C6BA1623024F00F8BCAB /* PaymentViewController.m */,
 			);
@@ -952,6 +1007,9 @@
 		84DDACE415EF51890005B132 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				2001D4971625BB3400EFF320 /* moscow.png */,
+				2001D4981625BB3400EFF320 /* piter.png */,
+				2001D4951625B90000EFF320 /* kazan.png */,
 				20AB90871610B1AD005D96F5 /* Default-568h@2x.png */,
 				20AB907F1610ACAC005D96F5 /* fav_star.png */,
 				20AB900E1610856E005D96F5 /* flower_1.png */,
@@ -1069,7 +1127,22 @@
 				20AB90801610ACAC005D96F5 /* fav_star.png in Resources */,
 				20AB90881610B1AD005D96F5 /* Default-568h@2x.png in Resources */,
 				2092C6451622E8FA00F8BCAB /* OrderViewController.xib in Resources */,
-				2035F8D416247A340006C59B /* ReviewOrderController.xib in Resources */,
+				2001D4791625978300EFF320 /* ReviewOrderViewController.xib in Resources */,
+				2001D4891625994600EFF320 /* bg.png in Resources */,
+				2001D48A1625994600EFF320 /* greenbutton.png in Resources */,
+				2001D48B1625994600EFF320 /* LargebuttonGreen.png in Resources */,
+				2001D48C1625994600EFF320 /* pizza.png in Resources */,
+				2001D48D1625994600EFF320 /* pizza_ordercomplete.png in Resources */,
+				2001D48E1625994600EFF320 /* pizzabackground.png in Resources */,
+				2001D48F1625994600EFF320 /* pizzabutton.png in Resources */,
+				2001D4901625994600EFF320 /* pizzaexpress.png in Resources */,
+				2001D4911625994600EFF320 /* pizzaexpresstitle.png in Resources */,
+				2001D4921625994600EFF320 /* pizzatitle.png in Resources */,
+				2001D4931625994600EFF320 /* tableViewArrow.png in Resources */,
+				2001D4941625994600EFF320 /* whitespacer.png in Resources */,
+				2001D4961625B90000EFF320 /* kazan.png in Resources */,
+				2001D4991625BB3400EFF320 /* moscow.png in Resources */,
+				2001D49A1625BB3400EFF320 /* piter.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1137,7 +1210,6 @@
 				2092C6441622E8FA00F8BCAB /* OrderViewController.m in Sources */,
 				2092C6BC1623024F00F8BCAB /* PaymentSelectingViewController.m in Sources */,
 				2092C6BE1623024F00F8BCAB /* PaymentViewController.m in Sources */,
-				2035F8D316247A340006C59B /* ReviewOrderController.m in Sources */,
 				2035F90616247C700006C59B /* ECNetworkHandler.m in Sources */,
 				2035F90716247C700006C59B /* Address.m in Sources */,
 				2035F90816247C700006C59B /* BillingAgreementDetails.m in Sources */,
@@ -1161,6 +1233,8 @@
 				2035F91A16247C700006C59B /* SellerDetails.m in Sources */,
 				2035F91B16247C700006C59B /* SetExpressCheckoutRequestDetails.m in Sources */,
 				2035F91C16247C700006C59B /* ShippingOptions.m in Sources */,
+				2001D47B162597EC00EFF320 /* ReviewOrderViewController.m in Sources */,
+				2001D49D1625C6ED00EFF320 /* WebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1225,6 +1299,10 @@
 		8483770215D2FBFA00EC322F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD_32_BIT)",
+					armv7,
+				);
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Libs\"",
@@ -1248,6 +1326,10 @@
 		8483770315D2FBFA00EC322F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD_32_BIT)",
+					armv7,
+				);
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Libs\"",

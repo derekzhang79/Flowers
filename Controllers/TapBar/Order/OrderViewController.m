@@ -8,7 +8,7 @@
 
 #import "OrderViewController.h"
 #import "PaymentSelectingViewController.h"
-#import "ReviewOrderController.h"
+#import "ReviewOrderViewController.h"
 
 @interface OrderViewController () <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource, PaymentSelectingDelegate, UITextFieldDelegate>
 {
@@ -49,7 +49,7 @@
     paymentMethodCell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
     payCell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
-    payCell.textLabel.text = @"Оплатить";
+    payCell.textLabel.text = @"Подробнее";
     payCell.textLabel.textAlignment = UITextAlignmentCenter;
 }
 
@@ -116,11 +116,9 @@
 
 #pragma mark - Review order
 - (void)reviewOrder {
-    ReviewOrderController *reviewOrderVC = [[ReviewOrderController alloc] init];
-    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:reviewOrderVC];
-    [self presentModalViewController:navController animated:YES];
+    ReviewOrderViewController *reviewOrderVC = [[ReviewOrderViewController alloc] init];
+    [self.navigationController pushViewController:reviewOrderVC animated:YES];
     [reviewOrderVC release];
-    [navController release];
 }
 
 @end
